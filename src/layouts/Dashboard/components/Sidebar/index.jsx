@@ -56,7 +56,6 @@ class Sidebar extends Component {
             />
           </Link>
         </div>
-        <Divider className={classes.logoDivider} />
         
         <Divider className={classes.profileDivider} />
         <List
