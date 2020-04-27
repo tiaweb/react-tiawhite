@@ -57,27 +57,7 @@ class Sidebar extends Component {
           </Link>
         </div>
         <Divider className={classes.logoDivider} />
-        <div className={classes.profile}>
-          <Link to="/account">
-            <Avatar
-              alt="Roman Kutepov"
-              className={classes.avatar}
-              src="/images/avatars/avatar_1.png"
-            />
-          </Link>
-          <Typography
-            className={classes.nameText}
-            variant="h6"
-          >
-            Roman Kutepov
-          </Typography>
-          <Typography
-            className={classes.bioText}
-            variant="caption"
-          >
-            Brain Director
-          </Typography>
-        </div>
+        
         <Divider className={classes.profileDivider} />
         <List
           component="div"
@@ -209,7 +189,7 @@ class Sidebar extends Component {
           <ListItem
             className={classes.listItem}
             component="a"
-            href="https://devias.io/contact-us"
+            href="https://tiaweb.github.io"
             target="_blank"
           >
             <ListItemIcon className={classes.listItemIcon}>
