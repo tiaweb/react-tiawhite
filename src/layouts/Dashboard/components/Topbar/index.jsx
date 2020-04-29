@@ -7,7 +7,7 @@ import compose from 'recompose/compose';
 import PropTypes from 'prop-types';
 
 // Material helpers
-import { withStyles } from '@material-ui/core';
+import { withStyles,Hidden } from '@material-ui/core';
 
 // Material components
 import {
@@ -30,7 +30,7 @@ import {
 import { getNotifications } from 'services/notification';
 
 // Custom components
-import { NotificationList } from './components';
+import { NotificationList,Search } from './components';
 
 // Component styles
 import styles from './styles';
@@ -122,6 +122,9 @@ class Topbar extends Component {
             >
               {title}
             </Typography>
+            
+             <Hidden mdDown>&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<Search/></Hidden>
+            
             <IconButton
               className={classes.notificationsButton}
               onClick={this.handleShowNotifications}
